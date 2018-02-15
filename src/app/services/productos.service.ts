@@ -19,8 +19,12 @@ export class ProductosService {
       this.http.get('https://webpageangular.firebaseio.com/productos_idx.json')
       .subscribe(res=>{
         console.log(res.json());
-        this.productos=res.json();
-        this.cargando_productos=false;
+        /*asignando un delay para ver la animacion del loader*/
+        setTimeout(()=>{
+          this.productos=res.json();
+          this.cargando_productos=false;
+        },1500);
+
       });
     }
   }
