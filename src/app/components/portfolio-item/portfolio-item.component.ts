@@ -16,7 +16,7 @@ export class PortfolioItemComponent  {
 producto:any=undefined;
 cod:string=undefined;
 
-  constructor(private route:ActivatedRoute, private ps:ProductosService) {
+  constructor(private route:ActivatedRoute, public ps:ProductosService) {
     /*obtenemos los parametros**/
     route.params.subscribe(parametros=>{
       //   console.log(parametros);
