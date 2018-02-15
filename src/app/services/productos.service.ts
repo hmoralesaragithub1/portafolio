@@ -18,7 +18,7 @@ export class ProductosService {
       this.cargando_productos=true
       this.http.get('https://webpageangular.firebaseio.com/productos_idx.json')
       .subscribe(res=>{
-        console.log(res.json());
+        // console.log(res.json());
         /*asignando un delay para ver la animacion del loader*/
         setTimeout(()=>{
           this.productos=res.json();
