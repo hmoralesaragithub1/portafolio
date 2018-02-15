@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {InformacionService} from "./services/informacion.service";
+import {ProductosService} from "./services/productos.service";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ export class AppComponent {
   description="Mi primera pagina";
   */
 /*haciendo la llamada al constructor del servicio*/
-constructor(public is:InformacionService){
-  
+constructor(public is:InformacionService, public ps:ProductosService){
+
 }
 }
