@@ -1,2 +1,2 @@
-console.log('Hola')
-alert("Hola")
+console.log('Hola');
+window.open('https://hmoralesaragithub1.github.io/portafolio');
